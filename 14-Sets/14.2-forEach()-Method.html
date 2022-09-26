@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Sets Method</h2>
+        <p id ="p1"></p>
+        <script>
+            //forEach() calls a function for each element:
+            //create a sets
+            const letters = new Set(["x","y","z"]);
+
+            //list all elemets
+            let text = "";
+            letters.forEach (function(value){ text += value + "<br>";  })
+            document.getElementById("p1").innerHTML = text;    
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //constructor function for Person object
+            function person(first,last,age,eye){
+                this.firstName =first,
+                this.lastName = last,
+                this.age = age,
+                this.eyeColor = eye;
+            }
+            //create a person object 
+            const myFather = new person("John","Doe",54,"Brown");
+
+            //Display age
+            document.writeln("My Father is "+myFather.age+ " Years Old.")
+        </script>
+    </body>
+</html>

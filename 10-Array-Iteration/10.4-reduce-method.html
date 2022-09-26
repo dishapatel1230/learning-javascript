@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+    <h3>Reduce () method</h3>
+    <p>Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.</p>
+    <script>
+        const numbers = [45,4,9,16,25];
+        let sum = numbers.reduce(myfunction);
+        document.writeln(sum);
+        function myfunction(total,value,index,array){
+            return total + value; 
+        }
+    </script>
+</body>
+</html>    

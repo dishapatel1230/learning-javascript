@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Javascript MapMethod</h2>
+        <p id="p1">using Map.keys()</p>
+        <script>
+            //The keys() method returns an iterator object with the keys in a Map:
+          const fruits = new Map([
+              ["apples",500],
+              ["bananas",300],
+              ["kiwi",200]
+          ]);
+
+          let veggies = " ";
+          for (const x of fruits.keys()) {
+              veggies +=  x + "<br>";
+          }
+          document.getElementById("p1").innerHTML = veggies;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h3>Map Object</h3>
+        <p id="demo"></p>
+        <script>
+            //create a Object
+            const apples = {name: 'Apples'};
+            const bananas = {name:'Bananas'};
+            const kiwis = {name:'kiwis'};
+
+            //create new map
+            const fruits = new Map();
+
+            //Add the object to the  map
+            fruits.set(apples,500);
+            fruits.set(bananas,400);
+            fruits.set(kiwis,600);
+
+            document.getElementById("demo").innerHTML = fruits.size;
+        
+        </script>
+    </body>
+</html>

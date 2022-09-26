@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <p>let</p>
+        <script type = "text/javascript">
+            //Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+            //ES6 introduced two important new JavaScript keywords: let and const.
+            //These two keywords provide Block Scope in JavaScript.
+            //Variables defined with let cannot be Redeclared.
+            //Variables defined with let must be Declared before use.
+            //Variables defined with let have Block Scope
+            let x = 10;
+             console.log(x);
+            // Here x is 10
+
+            {
+                let x = 2;
+                console.log(x)
+                // Here x is 2
+            }
+
+            // Here x is 10 
+            console.log(x);
+
+        </script>
+    </body>
+          
+</html>

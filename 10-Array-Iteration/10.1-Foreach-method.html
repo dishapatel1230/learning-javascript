@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h2>Array for each method</h2>
+        <p>Calls a function for each element in the array.</p>
+        <p id="id1"></p>
+        <script>
+            const numbers = [45,4,9,16,25];
+
+            let txt = " ";
+            numbers.forEach(myfunction);
+            document.writeln(txt);
+            function myfunction(value , index, array){
+                txt += value +"<br>";
+
+            }
+        </script>
+    </body>
+</html>

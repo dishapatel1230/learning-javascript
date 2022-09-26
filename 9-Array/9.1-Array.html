@@ -1,0 +1,42 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h2>JavaScript Arrays</h2>
+
+        <script type="text/javascript">
+             
+             const car = ["BMW","Audi","Tesla"];
+             const fruits = ["Banana", "Orange", "Apple"];
+             document.writeln(car[0] + "<br>");
+             document.writeln(car[3] = "Toyota" + "<br>");
+             document.writeln(car + "<br>");
+             document.writeln(car.length + "<br>"); 
+             document.writeln(car[car.length-2] + "<br>");
+
+             
+                fruits.push("Lemon");
+                document.writeln(fruits+ "<br/>" );
+                fruits.pop("Lemon");                //remove element 
+                document.writeln(fruits + "<br/>");
+                fruits.push("Kiwi");                 //add element
+                document.writeln(fruits+ "<br/>");
+                fruits.shift()                      //shifted out
+                document.writeln(fruits + "<br>");  
+                fruits.unshift("Lemon");             //add element beginning of an array
+                document.writeln(fruits +"<br>");          
+                fruits.splice(2,0,"Mango","Banana")  //add new items to an array the first Parameter(2) defines the position where new elements should be added
+                document.writeln(fruits +"<br>");      //The second parameter (0) defines how many elements should be removed.
+                const newitem = car.concat(fruits);  //merging array through concate method
+                document.writeln(newitem +"<br>"); 
+                const citrus = fruits.slice(1);
+                document.writeln(fruits + "<br><br>" + citrus +"<br>");
+                document.writeln(fruits.toString()+ "<br>");
+                document.writeln(fruits.sort() + "<br>");
+                document.writeln(fruits.reverse() + "<br>");
+                const points = [40, 100, 1, 5, 25, 10];
+                document.writeln(points.sort(function(a, b){return a - b}) +"<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Javascript Maps</h2>
+        <p id="demo">Using Map.entries()</p>
+     <script>
+         //The entries() method returns an iterator object with the [key,values] in a Map:
+         const fruits = new Map([
+             ["apples",500],
+             ["banana",300],
+             ["kiwi",200]
+         ]);
+         let text = "";
+         for(const x of fruits.entries()){
+             text += x + "<br>";
+         }
+         document.getElementById("demo").innerHTML = text;
+     </script>
+    </body>
+</html>

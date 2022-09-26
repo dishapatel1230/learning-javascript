@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <h2>JavaScript async / await</h2>
+        <h3 id="h2"></h3>
+        <script>
+            async function myDisplay() {
+                let myPromise = new Promise(function (resolve,reject){
+                    resolve("Hello world Welcome");
+                });
+                document.getElementById("h2").innerHTML = await myPromise;
+            }
+            myDisplay();
+        </script>
+    </body>
+</html>

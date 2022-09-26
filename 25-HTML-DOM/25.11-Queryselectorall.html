@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDIV">
+        <h2>A heading in div</h2>
+        <p>A p element in div.</p>
+        <p>Another p element in div.</p>
+    </div>
+    <p>Click the button to add a background color to all p elements inside DIV.</p>
+    <button type="button" onclick="myfunction()">click</button> 
+    <script>
+        function myfunction(){
+            //querySelectorAll() method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object.
+//The NodeList object represents a collection of nodes. The nodes can be accessed by index numbers. The index starts at 0.
+            let x = document.getElementById("myDIV").querySelectorAll("p");
+            let i;
+            for(i=0;i<x.length;i++){
+                x[i].style.backgroundColor = "grey";
+            }
+        }
+    </script>
+</body>
+</html>

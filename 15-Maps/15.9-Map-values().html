@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Javascript Map</h2>
+        <p id="demo"></p>
+        <script>
+            //The values method returns an iterator object with the values in a Map:
+            const fruits = new Map ([
+                ["apples",500],
+                ["bananas",400],
+                ["kiwi",300]
+            ]);
+            let total = 0;
+            for (const x of fruits.values()) {
+                total += x;
+            }
+            document.getElementById("demo").innerHTML = total;
+        </script>
+    </body>
+</html>

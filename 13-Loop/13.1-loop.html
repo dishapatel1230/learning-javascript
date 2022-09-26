@@ -1,0 +1,78 @@
+<html>
+   <body>   
+      <script type = "text/javascript">
+                    var linebreak  = "<br/>";
+                    /*if-else */
+                        var book = "maths";
+                        if( book == "history" ) {
+                        document.write("History Book");
+                        } else if( book == "maths" ) {
+                        document.write("Maths Book");
+                        } else if( book == "economics" ) {
+                        document.write("Economics Book");
+                        } else {
+                        document.write("Unknown Book");
+                        }
+                        document.write(linebreak);
+
+                        /*switch-case */
+                        var grade = "A";
+                        document.write("Swtich Block<br/>");
+                        switch (grade) {
+                                            case 'A': document.write("Good Job <br/>");
+                                            case 'B': document.write("Pretty Good<br/>");
+                                            case 'C': document.write("Excellent<br/>");
+                                            case 'D': document.write("Worest<br/>");
+
+                                        }
+                            document.write("Exiting grade block");
+                            document.write(linebreak);
+
+                        /*while loop*/   
+                        var count = 0;
+                        while (count < 6){
+                                          document.write("count is: "+count+"<br/>");
+                                          count++;
+                                        }
+                        document.write("Loop Exist");
+                        document.write(linebreak);
+
+                        /*do-while*/
+                        var count = 0;
+                       do {
+                          document.write("Current Count : " + count + "<br />");
+                          count++;
+                         }
+                         while (count < 5);
+                         document.write ("Loop stopped!");
+                         document.write(linebreak);   
+                        /* for loop */
+                        var count;
+                        for(count = 0; count < 6; count++) {
+                        document.write("Current Count : " + count );
+                        document.write("<br />");
+                      }         
+                         document.write("Loop stopped!");
+                         document.write("<br/>")
+
+                         /* for-in */
+                          const person = {fname:"John", lname:"Doe", age:25}; 
+
+                                    let txt = "";
+                                    for (let x in person) {
+                                    txt += person[x] + " " ;
+                                    }
+
+                           document.writeln(txt);
+                            /*for-of */
+                            const cars = ["BMW","Volvo","mini"];
+                             let text = "";
+
+                             for (let x of cars){
+                                text += x + "<br>";
+                             }
+                            document.writeln(text);
+       </script>      
+      
+   </body>
+<html>

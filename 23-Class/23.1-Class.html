@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <h3>Javascript Class Method</h3>
+        <p>Pass a parameter into the "age()" method.</p>
+        <p id="demo"></p>
+        <script>
+            //Declaring Calss
+            class car{
+                //intialiazation of object
+                constructor(name,year)
+                {
+                    this.name= name;
+                    this.year= year;
+                }
+                //Declaring method with parameter
+                age(x){
+                    return x - this.year;
+                }
+            }
+            //passing object to a variable   
+
+            let date = new Date();
+            let year = date.getFullYear();
+            let myCar = new car("BMW",2014);
+            //calling method
+            document.getElementById("demo").innerHTML = "My car is" + myCar.age(year) + "Years Old";   
+        </script>
+    </body>
+</html>

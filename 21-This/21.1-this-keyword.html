@@ -1,0 +1,18 @@
+<html>
+   <body>
+     <h3>The javascript this keyword</h3>
+     <p>this represents person object</p>
+     <script>
+         //create object
+         const person = {
+             firstName : "John",
+             lastName: "David ",
+             id:1001,
+             fullName : function(){
+                       return this.firstName + " " +this.lastName;
+            }
+         };
+         document.writeln(person.fullName());
+     </script>
+   </body> 
+</html>

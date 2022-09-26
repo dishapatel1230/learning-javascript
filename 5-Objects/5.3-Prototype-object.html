@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  //All JavaScript objects inherit properties and methods from a prototype.
+  //The JavaScript prototype property allows you to add new properties to object constructors:
+function Employee(firstName,lastName)
+{
+  this.firstName=firstName;
+  this.lastName=lastName;
+}
+
+Employee.prototype.company="ABC"
+
+var employee1=new Employee("Martin","Roy");
+var employee2=new Employee("Duke", "William");
+document.writeln(employee1.firstName+" "+employee1.lastName+" "+employee1.company+"<br>");
+document.writeln(employee2.firstName+" "+employee2.lastName+" "+employee2.company);
+</script>
+
+</body>
+</html>
+
+ 

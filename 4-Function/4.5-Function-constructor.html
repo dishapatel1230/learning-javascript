@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+            //function constructor 
+            var func = new Function("x","y","return x*y;");  //syntax: var variablename = new function(arg1,arg2,"functionbody;")
+            function secondFunction(){
+                var result;
+                result = func(20,30);
+                document.write(result);
+            }
+        </script>
+    </head>
+    <body>
+     <form>
+         <input type  = "button" value ="Click Here" onclick = "secondFunction()"/>
+     </form>
+    </body>
+    </body>
+</html>

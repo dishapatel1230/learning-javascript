@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h3>Map() Method</h3>
+        <p>Creates a new array with the results of calling a provided function on every element in this array.</p>
+        <script>
+          const number1 = [45,4,9,16,25];
+          const number2 = number1.map(myfunction);
+          document.writeln(number2);
+
+          function myfunction(value,index,array){
+              return value*2;
+          }
+        </script>
+    </body>
+</html>

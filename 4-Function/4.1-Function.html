@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    
+    <body>
+        <script type = "text/javascript">
+            //Define Function And pass Parameters
+            function concatenate(first,last){  
+            var name;
+            name = first+last;
+            return name; //return function
+            }
+            function secondFunction() {
+            var result;
+            result = concatenate('Dev', 'Dixita');
+            document.write (result );
+         }
+             </script>
+    </body>
+    <p>Click the following button to call the function</p>      
+    <form>
+       <!--calling function-->
+       <input type = "button" onclick = "secondFunction()" value = "Concatenate">
+    </form>      
+    <p>Use different text in write method and then try...</p>
+</html>

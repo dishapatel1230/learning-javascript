@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h3>String Search method</h3>
+        <script>
+           let str = "Please locate where 'locate' occurs!";
+           document.writeln(str.indexOf("locate"));
+           document.writeln(str.lastIndexOf("locate"));
+           document.writeln(str.search("where"));
+           let text = "The rain in SPAIN stays mainly in the plain";
+           document.writeln(text.match(/ain/gi));    //fin a word ain in string
+           document.writeln(text.includes("rain"));   //return value true of false
+           let text1 = "Hello world, welcome to the universe.";
+           document.writeln(text1.startsWith("world", 6));       //return value true or false
+           document.writeln(text1.endsWith("welcome",20));
+        </script> 
+    </body>
+</html>

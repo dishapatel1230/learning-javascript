@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h3>Javascript set object</h3>
+        <p id ="p1"></p>
+        <script>
+            /*A JavaScript Set is a collection of unique values.
+            Each value can only occur once in a Set.
+            A Set can hold any value of any data type.*/
+
+            //create set
+            const letters = new Set();
+
+            //Add values to set
+            letters.add("a");
+            letters.add("n");
+            letters.add("d");
+            
+            //display set size
+            document.getElementById("p1").innerHTML = letters.size;
+        </script>
+    </body>
+</html>

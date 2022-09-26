@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+   
+  let str = "apple, Banana, Kiwi";  
+  //find a length
+  document.writeln(str.length) ;
+  document.writeln(str.slice(7,13)); //it display with start,end 
+  document.writeln(str.slice(-5,-1));
+  document.writeln(str.substring(0,5));  //it cannot accpet negative value
+  document.writeln(str.substr(7));    //will slice out the rest of the string.
+   let text ="Hello designers"
+   document.writeln(text.charAt(1));  //charAt method
+
+   let text1 = text.toUpperCase();  //uppercase
+   document.writeln(text1);
+   let text2 = text.toLowerCase();  //lowercase
+   document.writeln(text2);
+   let str1 = " Good ";
+   let str2 = " Morning ";
+   let str3 = str1.concat(" ",str2);   //concatination
+   document.writeln(str3);
+   let str4 = "  Focus on yourself  "
+   let str5 = str4.trim();           //trim remove whitespace
+   document.writeln(str5);      
+     
+   let str6 = str4.replace("Focus","Love");    //replace method 
+   document.writeln(str6);
+
+
+</script>
+</body>
+</html>

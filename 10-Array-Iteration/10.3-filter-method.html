@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h3>filter () method</h3>
+        <p>Creates a new array with all of the elements of this array for which the provided filtering function returns true.</p>
+        <script>
+            const number = [45, 4, 9, 16, 25];
+            const over18 = number.filter(myfunction);
+            document.writeln(over18);
+            function myfunction(value,index,array)
+            {
+                return value > 18;
+            }
+        </script>     
+    </body>
+</html>

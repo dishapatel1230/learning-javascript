@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h3>Javascript Event</h3>
+        <label>Enter your name:</label>
+        <input type="text" id="fname" onchange="upperCase()"/>
+        <button id="btn">Click</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+            document.getElementById("btn").onclick = displayDate;
+            function displayDate(){
+                document.getElementById("demo").innerHTML = Date();
+            } 
+            function upperCase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+           }
+           
+        </script>
+    </body>
+</html>

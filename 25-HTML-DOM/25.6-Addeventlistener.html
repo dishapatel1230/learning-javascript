@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p>addEventlistner()method</p>
+        <button id="btn">Click Me</button>
+        <p id="id1"></p>
+        <p id="id2"></p>
+        <script>
+            function fun()
+            {
+               alert("Welcome the world");
+            }
+         
+         function fun1()
+         {
+             document.getElementById("id1").innerHTML = "Hello developers";
+         }
+         function fun2()
+         {
+             document.getElementById("id2").innerHTML = "Designers are creative";
+         }
+
+         var mybtn = document.getElementById("btn");
+         mybtn.addEventListener("click",fun); 
+         mybtn.addEventListener("click",fun1);
+         mybtn.addEventListener("click",fun2);   
+        </script>
+    </body>
+</html>

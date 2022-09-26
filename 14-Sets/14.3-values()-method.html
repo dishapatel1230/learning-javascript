@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Set Method</h2>
+        <p>values() method returns an Iterator object containing all the values in a Set</p>
+        <p id="p1"></p>
+        <script>
+         // create a set
+         const letters = new Set(["a","b","c"]);
+
+         //list all elements
+         let text = "";
+         for (const x of letters.values()){
+             text += x + "<br>";
+         }
+
+         document.getElementById("p1").innerHTML = text;
+        </script>
+    </body>
+</html>

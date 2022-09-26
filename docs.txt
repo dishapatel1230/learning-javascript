@@ -1,0 +1,49 @@
+Ref:
+https://www.tutorialspoint.com/javascript/index.htm
+https://www.w3schools.com/js/DEFAULT.asp
+
+1. Variables
+    - Types
+    - Scope
+    - var
+    - let
+    - Const
+    - null
+    - undefined
+2. Operators 
+    - Arithmetic
+    - Comparisor
+    - Logical
+    - Assignment
+    - Ternary/Conditional
+3. Conditions 
+    - If...Else
+    - Switch
+    - While
+    - For
+    - For in
+    - Break
+    - Continue
+4. Functions
+    - Definition 
+        - name
+        - parameters
+        - return type
+    - Calling function
+    - varible as function reference
+5. Object
+
+6. JSON
+
+5. Events
+    - Event object
+    - Event List
+6. Cookies
+
+7. Page redirect
+
+8. Dialogs
+
+9. Objects
+
+

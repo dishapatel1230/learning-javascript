@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <p>var vs let</p>
+        <script type = "text/javascript">
+            //Ref: https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var
+            //var is function scoped and let is block scoped
+            console.log(foo); // undefined
+            var foo = "Foo";
+            console.log(foo); // Foo
+
+            console.log(bar); // ReferenceError
+            let bar = "Bar";
+            console.log(bar); // Bar
+        </script>
+    </body>
+          
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Javascript Html DOM</h1>
+        <p>Finding html elements by tag name</p>
+        <p >This element demostrates the <b>getElementsByTagName</b> method.</p>
+        <p id="demo"></p>
+        <script>
+            const element = document.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = 'The text in first Paragraph (index 0) is :'
+             + element[0].innerHTML;
+
+        </script>
+    </body>
+</html>

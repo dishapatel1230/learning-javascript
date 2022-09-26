@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <h2>Javascript Map</h2>
+        <p id="demo">using Map.forEach():</p>
+        <script>
+            //The forEach() method invokes a callback for each key/value pair in a Map:
+            const fruits = new Map([
+                ["apples",500],
+                ["bananas",400],
+                ["oranges",300],
+                ["kiwi",200]
+            ]);
+            let text = " ";
+            fruits.forEach(function(value,key){
+                text  += key + ' = ' + value + "<br>"
+            })
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>
